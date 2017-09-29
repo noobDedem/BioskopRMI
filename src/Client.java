@@ -2,16 +2,12 @@ import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
-import java.util.Scanner;
 import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
 
 public class Client {
 
     public static void main(String[] args) {
-
-        // Digunakan untuk membaca inputan user
-        Scanner sc = new Scanner(System.in);
 
         /**
          * Digunakan untuk parameter pengecekan apakah input yang
@@ -24,7 +20,7 @@ public class Client {
 
         try {
             // IP Address dari server yang dituju
-            String ipServer = "192.168.100.49";
+            String ipServer = "192.168.43.129";
             // Port dari RMI
             int port = 1099;
             // Digunakan untuk reference dari remote object pada ip dan port tertentu
